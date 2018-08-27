@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TitleActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        >
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="THINGS TO DO"
+                android:textAlignment="center"
+                android:textColor="#288dde"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="18"
+                android:layout_marginTop="15dp"
+                android:scrollbars="vertical" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button"
+            android:paddingBottom="10dp"
+            android:text="new"
+            android:textColor="@android:color/black"
+
+            />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button"
+            android:paddingBottom="10dp"
+            android:text="logout"
+            android:textColor="@android:color/black" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/design_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#83bae6"
+        android:orientation="vertical"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="TITLE"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+
+            android:id="@+id/etEnter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/view"
+            android:hint="Enter note title" />
+
+        <Button
+            android:id="@+id/btnScrollDown"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/view"
+            android:layout_gravity="center"
+            android:text="DONE"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
